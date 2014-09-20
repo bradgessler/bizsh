@@ -21,7 +21,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 
-  spec.add_dependency "pry"
-  spec.add_dependency "activesupport"
-  spec.add_dependency "stock_quote"
+  spec.add_runtime_dependency "pry"
+  spec.add_runtime_dependency "stock_quote", ">= 1.1.8"
+  # I have to include rest-client and mime-types on behalf of the stock_quote gem so
+  # that I don't get "WARN: Unresolved specs during Gem::Specification.reset" warnings
+  spec.add_runtime_dependency "rest-client", ">= 1.7.2"
+  spec.add_runtime_dependency "mime-types", ">= 2.3"
 end

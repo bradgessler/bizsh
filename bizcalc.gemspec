@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Bizsh::VERSION
   spec.authors       = ["Brad Gessler"]
   spec.email         = ["bradgessler@gmail.com"]
-  spec.summary       = %q{A shell for quickly running business calculations.}
+  spec.summary       = %q{An interactive ruby shell optimized business calculations.}
   spec.homepage      = "https://github.com/bradgessler/bizsh"
   spec.license       = "MIT"
 

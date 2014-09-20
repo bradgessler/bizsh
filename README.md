@@ -1,6 +1,6 @@
-# Bizsh
+# Business Shell
 
-An interactive ruby shell optimized business calculations.
+`bizsh` is an interactive ruby shell optimized business calculations.
 
 ## Usage
 
@@ -27,7 +27,7 @@ You're greated with an interactive Ruby shell that's optimized for business calc
 
 The calculator apps that ship on Mac and Windows are great for really basic calculations, but are lacking when a few variables need to be set to complete a calculation. Spreadsheets are great for building models or very complex calculations, but too heavy for running simpler calculations. There are desktop and online apps that do calculations, but are clunky or have ads all over the place.
 
-I wrote `bizsh` after I found myself running a lot of common calculations in `irb`.
+I wrote `bizsh` after I found myself running a lot of common calculations in `irb` for my business, [Poll Everywhere](http://www.polleverywhere.com). I plan on adding more functionality to this as I continue using this shell.
 
 ## Contributing
 

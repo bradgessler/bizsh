@@ -73,6 +73,16 @@ module Bizsh
     end
   end
 
+  module Stocks
+    refine String do
+      require "stock_quote"
+
+      def quote
+        StockQuote::Stock.quote(self)
+      end
+    end
+  end
+
   class REPL
     # REPL prompt.
     NAME = 'bizsh'
@@ -81,6 +91,7 @@ module Bizsh
     using Functions
     using Formatting
     using ToNum
+    using Stocks
 
     # Start a REPL with refined types.
     def start
